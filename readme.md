@@ -10,8 +10,9 @@
 
 <p>rename .env.example to .env only</p>
 
-<p>update composer   in cmd-> composer update</p>
+<p>Update composer   in cmd-> composer update</p>
 
+<p>Generate key in cmd-> php artisan key:generate</p>
 
 
 <p>If U need nodejs install node modules -> npm install</p>
