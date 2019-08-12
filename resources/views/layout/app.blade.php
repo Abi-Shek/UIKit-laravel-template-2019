@@ -18,6 +18,8 @@
 
 
     <link rel="stylesheet" href="../css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -27,9 +29,34 @@
 </div>
 
 
-
 <script src="../js/uikit.min.js"></script>
 <script src="../js/uikit-icons.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/jquery.flip.js"></script>
+
+
+<script>
+
+
+    // $("#card").flip();
+
+    $("#card").flip({
+        axis: 'y',
+        trigger: 'hover',autoSize:'true'
+    });
+
+</script>
+<script src="../js/jquery.star-rating-svg.js"></script>
+<script>
+
+    $(".my-rating").starRating({
+        starSize: 25,
+        callback: function(currentRating, $el){
+            // make a server call here
+        }
+    });
+</script>
 
 </body>
 
